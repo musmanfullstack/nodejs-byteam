@@ -5,5 +5,6 @@ const server = http.createServer((req,res) =>{
 //in it with arrows we declare the function
     
 });
-
+//creating a server is sound like a super complex but to create a server is a few line of code.
+//if you run thisa file it keep reloading because the request cannot find any page.
 server.listen(3000);

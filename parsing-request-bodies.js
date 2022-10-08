@@ -16,7 +16,7 @@ if(url ==='/message' && method === 'POST'){
         console.log(chunk);//show the chunks in consol 
         body.push(chunk); 
     });
-    req.on ('end',() => {
+    req.on ('end',() => {//block the code execution and work only on that fuction and end the code
         const parsedBody = Buffer.concat(body).toString();//buffer the chunks
         const message = parsedBody.split('=')[1];
         fs.writeFileSync('message.js' , message);//make a file name as meesage and shows the message what we enter in the input feild.

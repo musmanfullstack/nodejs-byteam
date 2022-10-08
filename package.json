@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-byteam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Redirecting-request.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node parsing-request-bodies.js",
+    "start-server":"node parsing-request-bodies.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musmanfullstack/nodejs-byteam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musmanfullstack/nodejs-byteam/issues"
+  },
+  "homepage": "https://github.com/musmanfullstack/nodejs-byteam#readme"
+}

@@ -13,6 +13,7 @@ app.use('/add-product',(req, res, next)=>{
     res.send('<form action="/product" method="POST"><input  type="text" name="title"> <button type="submit">Add product </button></form>');
 });
 //In parsing incoming requests we redirect our route to one to another. In the parsing body we make a form and when somebody enters data in the form it redirects to another link. If we want to show that submit thing in the console then we download a third party package in our vs code. The name of this third part app is body parser. 
+//Hence now we can use a body parser to see the input field in the console. First we put the link of add-product in the url. We can see our form then when we can add any name in the form it directly redirects to the product link. It works on parsing the body and then redirects to add a student url. Then we can see the added students. Hence from one middleware we go to the next, use the third package and then go to the next or third url. From this file you can understand all the middleware, routes and body praser working.
 app.use('/product', (req, res, next)=>{
     console.log(req.body);
     res.redirect('/add-student');

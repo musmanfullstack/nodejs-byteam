@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
+        link(rel="stylesheet", href="assets/css/style.css")
+        title Shop 
+    body 
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+            a.navbar-brand(href="#") Unial Solution 
+            div.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item
+                        a.nav-link(href="/admin/add-product") Add product
+                    li.nav-item.active
+                        a.nav-link(href="/add-student") Shop
+        div.container.m-3
+            h1 My products
+            p list of all products...
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js")        

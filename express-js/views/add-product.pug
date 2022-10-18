@@ -7,30 +7,22 @@ html(lang="en")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
         link(rel="stylesheet", href="assets/css/style.css")
-        title #{doctitle}
+        title Add Prouct
     body 
         nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
             a.navbar-brand(href="#") Unial Solution 
             div.collapse.navbar-collapse
                 ul.navbar-nav.mr-auto
-                    li.nav-item
-                        a.nav-link(href="/admin/add-product") Add product
                     li.nav-item.active
+                        a.nav-link(href="/admin/add-product") Add product
+                    li.nav-item
                         a.nav-link(href="/add-student") Shop
-        div.grid
-            if prods.length > 0 
-                each product in prods
-                    div.card
-                        div.card-body
-                            h4.card-title #{product.title}
-                            p.card-text Some example text. Some example text.
-                            a.card-link(href="/admin/add-product") Add More product
-            else 
-                h1 No products in list
-                    
-
-
+        div.container.m-3
+            form(action="/admin/add-product", method="POST") 
+                div.form-group.justify-content-center.mx-5.my-3 
+                    label(for="title") Title
+                        input.form-control(type="text",name=title , placeholder="Enter title")
+                button.btn.btn-outline-primary.my-2.my-sm-0.mx-5(type="submit") Add Product
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js") 
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js") 
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js") 
-       
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js")        

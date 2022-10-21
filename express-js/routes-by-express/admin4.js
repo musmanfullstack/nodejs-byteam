@@ -14,7 +14,7 @@ router.post('/add-product', (req, res, next)=>{
     res.redirect('/add-student');
 });
 
-
+ // res.render('add-product', {pageTitle: 'ADD PRODUCT' })
 
 exports.routes= router;
 exports.products = products;

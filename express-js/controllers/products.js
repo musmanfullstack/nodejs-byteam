@@ -1,4 +1,4 @@
-const products = [];
+const products = [];//we call array in controller in it because it is working with the controller
 exports.getAddProduct = (req, res, next)=>{
     res.render('add-product',{ pageTitle : 'Add product'});
 };

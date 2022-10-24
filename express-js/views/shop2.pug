@@ -1,0 +1,18 @@
+extends layouts/main-layout.pug
+
+
+block content
+    div.grid
+        if prods.length > 0 
+            each product in prods
+                div.card
+                    div.card-body
+                        h4.card-title #{product.title}
+                        p.card-text Some example text. Some example text.
+                        a.card-link(href="/admin/add-product") Add More product
+        else 
+            h1 No products in list  
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js") 
+       

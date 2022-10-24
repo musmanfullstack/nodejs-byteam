@@ -1,0 +1,12 @@
+extends layouts/main-layout.pug
+
+block content
+    div.container.m-3
+        form(action="/admin/add-product", method="POST") 
+            .form-group.justify-content-center.mx-5.my-3 
+                label(for="title") Title
+                input.form-control(type="text",name="title", placeholder="Enter title")#title
+            button.btn.btn-outline-primary.my-2.my-sm-0.mx-5(type="submit") Add Product
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js")        

@@ -7,8 +7,8 @@ const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', 'views');
-const adminData = require('./routes-by-express/admin5');
-const shopData = require('./routes-by-express/shop5');
+const adminData = require('./routes-by-express/admin6');
+const shopData = require('./routes-by-express/shop6');
 
 app.use(bodyParser.urlencoded({extended: false}));
 

@@ -10,9 +10,7 @@ const getProductsFromFile = cb => {
             else{
                 cb(JSON.parse(fileContent));
             }
-            
         });
-
 }
 module.exports = class Product {
     constructor(t) {

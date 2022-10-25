@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 
-const adminData = require('./admin4');
+const adminData = require('./admin6');
 const router = express.Router();//declaring routers
 router.get('/add-student',(req, res, next)=>{
     console.log('shop.js',adminData.products);

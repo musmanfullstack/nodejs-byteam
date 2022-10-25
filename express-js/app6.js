@@ -2,7 +2,7 @@ const path = require('path');
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const errorController = require('./controllers/errors');
+const errorController = require('./controllers/errors2');
 const app = express();
 
 app.set('view engine', 'pug');

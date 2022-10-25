@@ -4,9 +4,8 @@ exports.getAddProduct = (req, res, next)=>{
 };
 
 exports.postAddProduct = (req, res, next)=>{    
-    const product = new Product(req.body.title)//creating new object
-    product.save();//For save the product object.
-     products.push({title: req.body.title}); 
+    const products = new Product(req.body.title)//creating new object
+    products.save();//For save the product object.
      res.redirect('/add-student');
  };
 

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <form action="/addmedia"  method="get" enctype="multipart/form-data"  >
+   <h3>ADD STUDENT MEDIA</h3>
+   
+    <hr>
+     <label for="name"><b>Student name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+  Select image to upload:
+  <input type="file" name="image" id="image">
+&nbsp; <br>
+<br>
+  <input type="submit" value="Upload Image" name="submit">
+<br>
+<br>
+ Select vedio to upload:
+<input type="file" name="vedio" id="vedio">
+&nbsp; <br>
+<br>
+  <input type="submit" value="Upload vedio" name="submit">
+<br>
+    <a href="./" style="color:black">BACK TO HOME PAGE</a> <br>
+     
+     {{#if mesg}}
+     <h3>Data Inserted</h3>
+     {{/if}}
+
+</form>
+</div>
+</body>
+</html>

@@ -12,6 +12,15 @@
         <li class="nav-item  ">
           <a class="nav-link <%= path === '/add-student' ? 'active' : '' %>"  href="/add-student">Shop</a>
         </li>
+        <li class="nav-item  ">
+          <a class="nav-link <%= path === '/cart' ? 'active' : '' %>"  href="/cart">Cart</a>
+        </li>
+        <li class="nav-item  ">
+          <a class="nav-link <%= path === '/products' ? 'active' : '' %>"  href="/products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= path === '/admin/products' ? 'active' : ''  %>"  href="/admin/products">Admin Products</a>
+        </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

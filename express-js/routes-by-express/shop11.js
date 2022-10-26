@@ -1,13 +1,16 @@
 const path = require('path');
 const express = require('express');
 
+const shopeController = require('../controllers/shope5');
 
-const adminData = require('./admin11');
 const router = express.Router();
-router.get('/add-student',(req, res, next)=>{
-    console.log('shop.js',adminData.products);
-     const products = adminData.products;
-     res.render('shop',{prods: products, pageTitle: 'shop',path:'/add-student'});
-});
+router.get('/add-student', shopeController.getProducts);
 
-exports.routes= router;
+router.get('/products');
+
+router.get('/cart');
+
+router.get('/checkout');
+
+module.exports = router;
+

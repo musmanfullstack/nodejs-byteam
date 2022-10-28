@@ -18,7 +18,7 @@ app.set('view engine', 'hbs');
 app.set('views', 'views');
 
 const adminData = require('./routes-by-express/admin20');
-const shopRoutes = require('./routes-by-express/shop20');
+const shopData = require('./routes-by-express/shop20');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));

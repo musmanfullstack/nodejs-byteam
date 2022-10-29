@@ -8,7 +8,8 @@ router.get('/add-student', (req, res, next) => {
   const products = adminData.products;
   res.render('shop', {
     prods: products,
-    pageTitle: 'Shop'
+    pageTitle: 'Shop',
+    hasProducts: products.length > 0
    });
 });
  

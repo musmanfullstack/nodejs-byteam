@@ -15,6 +15,9 @@ exports.getIndex = (req, res, next) => {
 exports.getCart = (req, res , next) => {
     res.render('shop/cart', {path: '/cart', pageTitle: 'Your cart'})
 }
+exports.getOders = (req, res , next) => {
+    res.render('shop/oders', {path: '/oders', pageTitle: 'Your Oders'})
+}
 
 exports.getCheckout = (req, res , next) => {
     res.render('shop/checkout',{path: '/checkout', pageTitle: 'Check Out'})

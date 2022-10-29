@@ -2,21 +2,25 @@
 </head>
 <body>
   <%- include('../includes/navigation.ejs') %>
-      <div class="container my-2">
-        <div class="grid">
-            <% if (prods.length > 0) { %>
-                <% for (let product of prods) { %>
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title"><%= product.title %></h4>
-                        <p class="card-text">Some example text. Some example text.</p>
-                        <a href="/admin/add-product" class="card-link">Add More product</a>
-                    </div>
-                    <% } %>
-                </div>
-            <% } else { %>
-            <h1>No products in list</h1>
-                <% } %>
+  <% if (prods.length > 0) { %>
+    <% for (let product of prods) { %>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="<%= product.imageUrl %>" alt="<%= product.imageUrl %>">
+    <div class="card-body">
+      <h5 class="card-title"><%= product.title %></h5>
+      <p class="card-text"><%= product.description %></p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">PKR<%= product.price %></li>
+    </ul>
+    <div class="card-body">
+      <a href="/admin/add-product" class="card-link">Another link</a>
+    </div>
+  </div>
+  <% } %>
+  <% } else { %>
+    <h1>No products in list</h1>
+    <% } %>
         </div>
     </div>
     <%- include('../includes/end.ejs') %>
